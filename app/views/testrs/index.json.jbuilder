@@ -1,0 +1,1 @@
+json.array! @testrs, partial: 'testrs/testr', as: :testr

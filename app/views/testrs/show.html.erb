@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @testr.name %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @testr.active %>
+</p>
+
+<%= link_to 'Edit', edit_testr_path(@testr) %> |
+<%= link_to 'Back', testrs_path %>
