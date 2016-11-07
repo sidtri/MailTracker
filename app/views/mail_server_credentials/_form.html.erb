@@ -1,0 +1,16 @@
+<%= simple_form_for(@mail_server_credential) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :user %>
+    <%= f.input :address %>
+    <%= f.input :port %>
+    <%= f.input :user_name %>
+    <%= f.input :password %>
+    <%= f.input :authentication %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

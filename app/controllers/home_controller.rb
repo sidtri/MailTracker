@@ -1,4 +1,6 @@
 class HomeController < ApplicationController
+  before_action :require_login
+
   def index
 
   end
@@ -12,7 +14,7 @@ class HomeController < ApplicationController
     if(params[:sample])
       ComposeMailer.sample(@template).deliver
     else
-      ComposeMailer.compose(@template).deliver
+      # ComposeMailer.compose(@template).deliver
     end
   end
 

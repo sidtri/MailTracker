@@ -1,0 +1,1 @@
+json.partial! "mail_server_credentials/mail_server_credential", mail_server_credential: @mail_server_credential

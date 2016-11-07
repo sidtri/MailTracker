@@ -1,0 +1,1 @@
+json.array! @mail_server_credentials, partial: 'mail_server_credentials/mail_server_credential', as: :mail_server_credential

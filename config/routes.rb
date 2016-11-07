@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+  resources :mail_server_credentials
   resources :testrs
   resources :users
   resources :home

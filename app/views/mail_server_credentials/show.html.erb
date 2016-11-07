@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @mail_server_credential.user %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @mail_server_credential.address %>
+</p>
+
+<p>
+  <strong>Port:</strong>
+  <%= @mail_server_credential.port %>
+</p>
+
+<p>
+  <strong>User name:</strong>
+  <%= @mail_server_credential.user_name %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @mail_server_credential.password %>
+</p>
+
+<p>
+  <strong>Authentication:</strong>
+  <%= @mail_server_credential.authentication %>
+</p>
+
+<%= link_to 'Edit', edit_mail_server_credential_path(@mail_server_credential) %> |
+<%= link_to 'Back', mail_server_credentials_path %>
