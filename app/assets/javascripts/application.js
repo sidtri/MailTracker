@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require plugins/simplemde
+//= require plugins/selectize
 //= require_tree .

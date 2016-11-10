@@ -20,4 +20,7 @@
 class User < ApplicationRecord
   include Clearance::User
 
+  has_many :mail_server_credentials
+  has_many :messages, class_name: "Ahoy::Message"
+
 end

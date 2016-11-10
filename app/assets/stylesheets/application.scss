@@ -2,6 +2,7 @@
 @import "base/base";
 @import "susy";
 @import "plugins/simplemde";
+@import "plugins/selectize";
 
 body, .container { @include container(60em); }
 body { background: #f5efe6 }

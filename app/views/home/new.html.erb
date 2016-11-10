@@ -1,6 +1,8 @@
 <fieldset>
   <legend>Compose</legend>
   <%= form_tag home_index_path, class: 'container', id: 'compose_form' do %>
+    <%= label_tag(:to, "To ") %>
+    <%=  text_field_tag(:to, @template.to, id: "to" ) %>
     <%= label_tag(:subject, "Subject ") %>
     <%=  text_field_tag(:subject, @template.subject, id: "subject" ) %>
     <%= label_tag(:message, "Message ") %>

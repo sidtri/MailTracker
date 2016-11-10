@@ -6,11 +6,12 @@ class HomeController < ApplicationController
   end
 
   def new
-    @template = BasicTemplate.new()
+    @template = BasicTemplate.new
   end
 
   def create
     @template = BasicTemplate.new(permit_params)
+    @template.user = current_user
     if(params[:sample])
       ComposeMailer.sample(@template).deliver
     else
@@ -20,6 +21,6 @@ class HomeController < ApplicationController
 
   private
     def permit_params
-      params.permit(:subject, :message, :parse_message)
+      params.permit(:subject, :message, :parse_message, :to)
     end
 end

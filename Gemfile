@@ -43,6 +43,7 @@ gem "clearance"
 gem 'nested_form_fields'
 gem 'wicked'
 gem 'annotate'
+gem 'ahoy_email'
 
 
 gem 'pry'
