@@ -49,6 +49,8 @@ gem 'ahoy_email'
 gem 'pry'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'pry-rails'
+  gem 'awesome_print'
   gem 'byebug', platform: :mri
 end
 

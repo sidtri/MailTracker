@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+
+  resources :emails, only: [:index, :show]
+
+  resources :mail_getters
   resources :mail_server_credentials
   resources :testrs
   resources :users

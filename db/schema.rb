@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161104123245) do
+ActiveRecord::Schema.define(version: 20161118100608) do
 
   create_table "ahoy_messages", force: :cascade do |t|
     t.string   "token"
@@ -24,6 +24,19 @@ ActiveRecord::Schema.define(version: 20161104123245) do
     t.datetime "clicked_at"
     t.index ["token"], name: "index_ahoy_messages_on_token"
     t.index ["user_id", "user_type"], name: "index_ahoy_messages_on_user_id_and_user_type"
+  end
+
+  create_table "mail_getters", force: :cascade do |t|
+    t.string   "method"
+    t.string   "address"
+    t.string   "port"
+    t.string   "user_name"
+    t.string   "password"
+    t.string   "enable_ssl"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_mail_getters_on_user_id"
   end
 
   create_table "mail_server_credentials", force: :cascade do |t|
