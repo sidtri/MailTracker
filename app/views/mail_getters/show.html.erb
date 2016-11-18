@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Method:</strong>
+  <%= @mail_getter.method %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @mail_getter.address %>
+</p>
+
+<p>
+  <strong>Port:</strong>
+  <%= @mail_getter.port %>
+</p>
+
+<p>
+  <strong>User name:</strong>
+  <%= @mail_getter.user_name %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @mail_getter.password %>
+</p>
+
+<p>
+  <strong>Enable ssl:</strong>
+  <%= @mail_getter.enable_ssl %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @mail_getter.user %>
+</p>
+
+<%= link_to 'Edit', edit_mail_getter_path(@mail_getter) %> |
+<%= link_to 'Back', mail_getters_path %>

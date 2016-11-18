@@ -1,0 +1,1 @@
+json.partial! "mail_getters/mail_getter", mail_getter: @mail_getter

@@ -1,0 +1,1 @@
+json.array! @mail_getters, partial: 'mail_getters/mail_getter', as: :mail_getter
