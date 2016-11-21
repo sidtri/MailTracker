@@ -2,5 +2,7 @@
 <p>Find me in app/views/emails/index.html.erb</p>
 
 <ul>
-		<li><%= @emails.subject %></li>
+	<% @emails.each do |email| %>
+		<li><%= email.subject %></li>
+	<% end -%>
 </ul>
